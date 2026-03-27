@@ -1,6 +1,6 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
-//Name -
+//Name - Callum Sears
 
 import java.util.Arrays;
 import static java.lang.System.*; 
@@ -21,11 +21,16 @@ public class WordSort
 
 	public void sort()
 	{
+		Arrays.sort(wordRay);
 	}
 
-	public String toString( )
+	public String toString()
 	{
 		String output="";
-		return output+"\n\n";
+		
+		for (String w : wordRay) {
+			output += w + "\n";
+		}
+		return output + "\n";
 	}
 }
